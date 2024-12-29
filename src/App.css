@@ -1,0 +1,163 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(150deg,rgb(114, 129, 141), rgb(85, 89, 128),rgb(140, 68, 173));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  /* margin: 0 auto; */
+  /* background: linear-gradient(
+    150deg,
+    rgb(120, 194, 228),
+    rgb(35, 57, 129)
+    /* rgb(24, 38, 63) */
+  /*); */
+  /* background: rgba(96, 131, 204, 0.5); */
+  /* background-image: url("https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-N7MrTtDIMWg"); */
+  width: 30vw;
+  border-radius: 14px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  height: 90vh;
+}
+.input {
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 2px solid rgb(138, 146, 248);
+  height: 25px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+.input:focus {
+  border-color: rgba(96, 131, 204, 0.8); /* Changes color on focus */
+}
+.from {
+  gap: 5px;
+  display: flex;
+  margin-top: -1.2rem;
+}
+.search-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(125, 195, 241);
+  color: white; /* Makes the text stand out */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search-btn:hover {
+  background-color: rgb(105, 175, 221); /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Adds a lift effect */
+}
+/* Focus state for accessibility */
+.search-btn:focus {
+  outline: 2px solid rgba(125, 195, 241, 0.6); /* Adds a focus ring */
+  outline-offset: 2px;
+}
+.search-btn:active {
+  background-color: rgb(95, 165, 201); /* Even darker shade on click */
+  transform: translateY(0); /* Button goes back down */
+}
+.city-name {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.temp-image-div {
+  margin-top: -40px;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  /* background: #000; */
+  /* margin: 0px auto; /* Center the content with margin */
+  padding: 10px 0;
+}
+.temp-image-div > div h2 {
+  font-size: 2.5rem;
+}
+.temp-image-div > div {
+  flex: 1;
+  text-align: center;
+  /* min-width: 120px; */
+}
+.temp-image-div > div p {
+  margin-top: -32px;
+  color: rgb(61, 56, 56);
+}
+.temp-image-div img {
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  height: auto;
+}
+.additional-details{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: -10px;
+}
+.additional-details div{
+  background-color: rgb(56, 52, 52,0.4);
+  padding: 1px 6px;
+  border-radius: 12px;
+}
+.additional-details div p{
+  font-weight: bold;
+}
+.weather-container{
+  margin-top: -1.9rem !important; 
+  /* display: block; */
+}
+
+.date-time{
+  text-align: center;
+}
